@@ -14,8 +14,10 @@ function App() {
   };
 
   const calculateResult = () => {
+    if (input) {
     setInput(evaluate(input));
-  }
+    }
+  };
 
   return (
     <div className="App">
